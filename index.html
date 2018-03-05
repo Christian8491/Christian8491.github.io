@@ -22,6 +22,9 @@
           margin-left: auto;
           margin-right: auto;
       }
+      #about {
+        padding: 80px 0;
+      }
     </style>
   </head>
 
@@ -39,7 +42,10 @@
               <a class="nav-link js-scroll-trigger" href="#about">Abstract</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Implementation</a>
+              <a class="nav-link js-scroll-trigger" href="#services">Demo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Usage</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Report</a>
@@ -66,7 +72,7 @@
             <h2>Abstract</h2>
             <p class="lead">Barycentric coordinates yield to powerful and simple paradigm to interpolate data values on polyhedral domains. But with Local Barycentric coordinates we produce an interpolation between control points and inner points locally and win computational cost and storage requirements, inner points represent interior points of the domain as an affine combination of a set of control points. </p>
             <p class="lead">The present project calculates the deformation of models, particularly deformed boxes of 2D or 3D models. This deformation is carried out locally with respect to the whole domain of the model that is applied to the different mathematical methods so that the domain can be completely measured with respect to a single deformation at a control point. Separate the variation level by different colorations.</p>
-            <img src="imgs/Control_point.png" alt="Control points" style="width:50%;">
+            <img src="imgs/Control_point.png" alt="Control points" style="width:70%;">
           </div>
         </div>
       </div>
@@ -87,6 +93,22 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
+            <h2>Usage</h2>
+            <ul>
+              <li>Press the button "Load 2D Cage" or "Load 3D Cage" to load a cage obj file from folder 'data'. The vertices from the obj files are used as cage vertices.</li>
+              <li>Set the target number of cells for triangulation, and press the button "Triangulate" to compute the triangulation.</li>
+              <li>Set the solver parameters if necessary, then press the button "Compute LBC" to compute the coordinates.</li>
+              <li>Afterwards, check the checkbox "Display Weights", and click a control point to view its coordinate values via color coding.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
             <h2>Detailed Report</h2>
             <p class="lead">Loreo totam.</p>
           </div>
@@ -98,26 +120,11 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Usage</h2>
-            <ul>
-              <li>Press the button "Load 2D Cage" or "Load 3D Cage" to load a cage obj file from folder 'data'. The vertices from the obj files are used as cage vertices.</li>
-              <li>Set the target number of cells for triangulation, and press the button "Triangulate" to compute the triangulation.</li>
-              <li>Set the solver parameters if necessary, then press the button "Compute LBC" to compute the coordinates.</li>
-              <li>Afterwards, check the checkbox "Display Weights", and click a control point to view its coordinate values via color coding.</li>
-            </ul>
-            <p class="lead">With respect to my contribution about the LBC project, you can contact me directly through christian.cordova@ucsp.edu.pe </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
             <h2>Contact</h2>
-            <p class="lead">For the project in general about Local Barycentric Coordinates, you can go to <a href="url">https://github.com/bldeng/LBC</a>
+            <p class="lead">For the project in general about Local Barycentric Coordinates, you can go to <a href="https://github.com/bldeng/LBC">https://github.com/bldeng/LBC</a>
             , this project has support only on 2D space. For more contact with the authors, you can write to the emails <b>bldeng@gmail.com</b> (Bailin Deng) and <b>liuzishun@gmail.com</b> (Zishun Liu). </p>
+            <p class="lead">With respect to my contribution about the LBC project, you can contact me directly through christian.cordova@ucsp.edu.pe </p>
+            <p class="lead">Original paper: Juyong Zhang, Bailin Deng, Zishun Liu, Giuseppe Patanè, Sofien Bouaziz, Kai Hormann, and Ligang Liu. 2014. <b>Local barycentric coordinates</b>. ACM Trans. Graph. 33, 6, 2014.</p>
           </div>
         </div>
       </div>
@@ -137,6 +144,7 @@
               <li>Non-negativity in optimization.</li>
               <li>Voronoi diagrams.</li>
               <li>Delaunay Triangulation.</li>
+              <li>Isoperimetric inequality.</li>
             </ul>
           </div>
         </div>
