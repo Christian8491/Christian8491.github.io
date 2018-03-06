@@ -166,15 +166,20 @@
             This change was not made for the following reasons:</p>
             <li>The graphic part is not related anywhere with parallel implementation.</li>
             <li>OpenMP is used for calculations such as interpolations and iterative aspects, in which it works with an amount no greater than 110 control points and for that reason using CUDA will not provide benefits.</li>
-            <li>La librería Eigen trabaja internamente con OpenMP, esto quiere decir que si se desearía usar CUDA para el presente proyecto entonces se debería modificar gran parte de la librería para que funcione con CUDA, lo cuál es un tema muy complicado.</li>
+            <li>The Eigen library works internally with OpenMP, this means that if you want to use CUDA for the present project then you should modify much of the library to work with CUDA, which is a very complicated issue.</li>
             <br>
             <h3>Achievements</h3> 
+            <p class="lead">Below are the parts that could be achieved with respect to what was mentioned in the first presentation: </p>
+            <ul>
+              <li>The modern OpenGL part (using shaders) was implemented, leaving aside the previous implementation with old OpenGL.</li>
+              <li>The previous implementation only loaded models in 2d, that is, if we wanted to load models in 3D there was no support, that is why a class was implemented for the reading in particular of 3D geometric models.</li>
+              <li>Additional implementation to triangulate the model of the box on its surface.</li>
+            </ul>
             <br>
-            <p class="lead">Como primer trabajo futuro sería culminar la parte del algoritmo de cálculo para modelos en 3D, pues se llego sólo hasta una triangulación sobre la superficie, mas no cargar la textura una vez procesado los cálculos. </p>
             <h3>Future Work</h3>
             <p class="lead">As a first future work, we would finish the part of the calculation algorithm for 3D models, since we only reached triangulation on the surface, but not load the texture once the calculations were processed.</p>
             <br>
-            <p class="lead">Another very interesting contribution would be the implementation of paper <a href="http://graphics.cs.uh.edu/wp-content/papers/2017/2017-I3D-CageGeneration.pdf">Interactive Cage Generation for Mesh Deformation</a> which generates a box deformation for any three-dimensional model, this would be a great contribution because for the present work we only have a box model (for the armadillo) and then apply the algorithm of calculations of <b>LBC</b> to see the level of deformation with respect to each control point.</p>
+            <p class="lead">Another very interesting contribution would be the implementation of paper <a href="http://graphics.cs.uh.edu/wp-content/papers/2017/2017-I3D-CageGeneration.pdf" target="_blank">Interactive Cage Generation for Mesh Deformation</a> which generates a box deformation for any three-dimensional model, this would be a great contribution because for the present work we only have a box model (for the armadillo) and then apply the algorithm of calculations of <b>LBC</b> to see the level of deformation with respect to each control point.</p>
           </div>
         </div>
       </div>
@@ -185,9 +190,10 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Contact</h2>
-            <p class="lead">For the project in general about <a href="https://infoscience.epfl.ch/record/201853/files/LBC.pdf">Local Barycentric Coordinates</a>, you can go to <a href="https://github.com/bldeng/LBC">https://github.com/bldeng/LBC</a>
+            <p class="lead">For the project in general about <a href="https://infoscience.epfl.ch/record/201853/files/LBC.pdf" target="_blank">Local Barycentric Coordinates</a>, you can go to <a href="https://github.com/bldeng/LBC">https://github.com/bldeng/LBC</a>
             , this project has support only on 2D space. For more contact with the authors, you can write to the emails <b>bldeng@gmail.com</b> (Bailin Deng) and <b>liuzishun@gmail.com</b> (Zishun Liu). </p>
-            <p class="lead">With respect to my contribution about the LBC project, you can contact me directly through <a href="mailto:christian.cordova@ucsp.edu.pe"></a>  christian.cordova@ucsp.edu.pe </p>
+            <p class="lead">With respect to my contribution about the LBC project, you can contact me directly through <a href="mailto:christian.cordova@ucsp.edu.pe"><b>christian.cordova@ucsp.edu.pe</b></a>
+            </p>
             <p class="lead">Original paper: Juyong Zhang, Bailin Deng, Zishun Liu, Giuseppe Patanè, Sofien Bouaziz, Kai Hormann, and Ligang Liu. 2014. <b>Local barycentric coordinates</b>. ACM Trans. Graph. 33, 6, 2014.</p>
           </div>
         </div>
